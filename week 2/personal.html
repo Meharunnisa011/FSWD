@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Information</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f4f8;
+            margin: 0;
+            padding: 30px;
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #4f46e5;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 6px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        .buttons {
+            margin-top: 25px;
+            text-align: right;
+        }
+
+        button {
+            background: #4f46e5;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #3730a3;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="form-container">
+    <h1>Personal Information</h1>
+
+    <form action="education.html">
+
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label>Gender</label>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="other"> Other
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="address">Address</label>
+        <textarea id="address" name="address" rows="4"></textarea>
+
+        <label for="city">City</label>
+        <input type="text" id="city" name="city">
+
+        <label for="state">State</label>
+        <input type="text" id="state" name="state">
+
+        <div class="buttons">
+            <button type="submit">Next →</button>
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>
