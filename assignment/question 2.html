@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Change Font Style</title>
+
+    <script>
+        function changeFont() {
+            var font = document.getElementById("fontSelect").value;
+            document.getElementById("para").style.fontFamily = font;
+        }
+    </script>
+</head>
+
+<body>
+
+    <h2>Change Font Style</h2>
+
+    <label>Select Font:</label>
+
+    <select id="fontSelect" onchange="changeFont()">
+        <option value="Arial">Arial</option>
+        <option value="Times New Roman">Times New Roman</option>
+        <option value="Verdana">Verdana</option>
+    </select>
+
+    <p id="para">
+        This is a sample paragraph. Select a font from the drop-down list
+        to change the font style of this paragraph.
+    </p>
+
+</body>
+</html>
